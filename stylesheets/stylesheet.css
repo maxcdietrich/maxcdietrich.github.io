@@ -17,6 +17,10 @@ h1 {
 	font-size: 4em;
 }
 
+p {
+    font-size: 1.5em;
+}
+
 a {
 	text-decoration: none;
 	-webkit-transition-duration: 0.4s; /*For Safari users*/
@@ -46,6 +50,12 @@ div.center-page {
     transform: translate(-50%, -50%);
     ms-transform: translate(-50%, -50%);
     display: block;
+}
+
+div.about-me {
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 span.on-page {
