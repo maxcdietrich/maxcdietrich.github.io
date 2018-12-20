@@ -1,6 +1,6 @@
 /* Layout Properties */
 html {
-	background-color: white;
+	background-color: #edf3fc;
 }
 
 body {
@@ -9,11 +9,16 @@ body {
 
 /* Text Properties */
 a, p, h1, h2, h3, h4, h5, h6, nav {
-	font-family: 'Roboto', sans-serif;
 	color: #3f3f3f;
+    font-weight: normal;
+}
+
+a, p, nav, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
+    font-family: 'Cardo', serif;
 	font-size: 4em;
 }
 
@@ -27,8 +32,25 @@ a {
     transition-duration: 0.4s;
 }
 
+a.email {
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s; /*For Safari users*/
+    transition-duration: 0.4s;
+    color: #0080FF;
+}
+
+a.email:hover {
+    color: darkgray;
+}
+
 a:hover {
 	color: #0080FF;
+}
+
+img:hover {
+    -webkit-transition-duration: 0.4s; /*For Safari users*/
+    transition-duration: 0.4s;
+    opacity: 0.8;
 }
 
 
@@ -39,7 +61,7 @@ div.fill-page {
     padding: 0;
     margin: 0;
     text-align: center;
-    clear:both;
+    clear: both;
 }
 
 div.center-page {
@@ -53,9 +75,14 @@ div.center-page {
 }
 
 div.about-me {
-    margin-top: 10%;
     margin-left: 15%;
     margin-right: 15%;
+}
+
+div.homepage {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 span.on-page {
