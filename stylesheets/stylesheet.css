@@ -1,0 +1,56 @@
+/* Layout Properties */
+html {
+	background-image: url("../images/bg_tiling.png");
+	background-attachment: fixed;
+}
+
+body {
+	margin: 0;
+}
+
+/* Text Properties */
+a, p, h1, h2, h3, h4, h5, h6, nav {
+	font-family: 'Roboto', sans-serif;
+	color: #383838;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* Div Properties */
+div.fill-page {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    clear:both;
+}
+
+div.center-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    ms-transform: translate(-50%, -50%);
+    display: block;
+}
+
+/* Miscellaneous Properties */
+#menu {
+    position:fixed;
+    top: 0em;
+    width: 100%;
+    background-image: linear-gradient(#ebf1fa, rgba(255, 255, 255, 0));
+    z-index: 9999;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
