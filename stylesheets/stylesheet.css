@@ -1,4 +1,12 @@
-/* Layout Properties */
+/****************************************************/
+/* Theme colors:    #edf3fc for background
+                    #3f3f3f for text
+                    #0080FF for highlighted text    */
+/****************************************************/
+
+/****************************************************/
+/* Layout Properties: Applies to the entire webpage */
+/****************************************************/
 html {
 	background-color: #edf3fc;
 }
@@ -7,7 +15,9 @@ body {
 	margin: 0;
 }
 
-/* Text Properties */
+/****************************************************/
+/* Text Properties: Sets the properties of the text */
+/****************************************************/
 a, p, h1, h2, h3, h4, h5, h6, nav {
 	color: #3f3f3f;
     font-weight: normal;
@@ -18,18 +28,22 @@ a, p, nav, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-family: 'Cardo', serif;
+    font-family: 'Cardo', serif; /* Headers are different font */
 	font-size: 4em;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Makes paragraph text slightly larger (more readable) */
 }
 
 a {
 	text-decoration: none;
 	-webkit-transition-duration: 0.4s; /*For Safari users*/
     transition-duration: 0.4s;
+}
+
+a:hover {
+    color: #0080FF; /* Links slowly transition to blue on hover */
 }
 
 a.email {
@@ -40,21 +54,16 @@ a.email {
 }
 
 a.email:hover {
-    color: darkgray;
-}
-
-a:hover {
-	color: #0080FF;
-}
-
-img:hover {
-    -webkit-transition-duration: 0.4s; /*For Safari users*/
-    transition-duration: 0.4s;
-    opacity: 0.8;
+    color: darkgray; /* Just for email, link transitions from blue to dark gray */
 }
 
 
-/* Div Properties */
+/*****************************************************/
+/* Div Properties: Sets properties for specific divs */
+/*****************************************************/
+/* FILL PAGE: spans the entire screen */
+/* (Should use if there is roughly enough content to fill one screen) */
+/* (For example, probably wouldn't look great on Portfolio page) */
 div.fill-page {
     position: relative;
     min-height: 100vh;
@@ -62,8 +71,11 @@ div.fill-page {
     margin: 0;
     text-align: center;
     clear: both;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
+/* CENTER PAGE: centers content within container (usually fill-page div) */
 div.center-page {
     position: absolute;
     top: 50%;
@@ -74,23 +86,10 @@ div.center-page {
     display: block;
 }
 
-div.about-me {
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-div.homepage {
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-span.on-page {
-	text-decoration: overline solid #3f3f3f;
-}
-
-/* Miscellaneous Properties */
-#menu {
+/****************************************************************/
+/* Miscellaneous Properties: Sets properties for other elements */
+/****************************************************************/
+#menu { /* Keep the nav bar on top fixed */
     position:fixed;
     top: 0em;
     width: 100%;
@@ -101,6 +100,14 @@ span.on-page {
     padding-bottom: 1%;
 }
 
-img.with-border {
-	border: 0.5em solid #3f3f3f;
+/* Used for adding a bar above the current page on the navbar */
+span.on-page {
+    text-decoration: overline solid #3f3f3f;
+}
+
+/* Just for fun, make images lighter on hover */
+img:hover {
+    -webkit-transition-duration: 0.4s; /*For Safari users*/
+    transition-duration: 0.4s;
+    opacity: 0.8;
 }
