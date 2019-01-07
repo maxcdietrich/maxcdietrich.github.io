@@ -2,7 +2,7 @@
 /* Layout Properties: Applies to the entire webpage */
 /****************************************************/
 html {
-    background-color: #587ca8;
+    background-color: #ede4d1;
 }
 
 body {
@@ -83,7 +83,7 @@ div.homepage { /* properties for the box on the homepage */
     display: inline-block;
     border-top-left-radius: 3em;
     border-bottom-right-radius: 3em;
-    background-color: #ede4d1;
+    background-color: #587ca8; /* #ede4d1; */
     width: 50em;
     margin: none;
 }
