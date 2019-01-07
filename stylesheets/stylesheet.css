@@ -13,30 +13,34 @@ body {
 /* Text Properties: Sets the properties of the text */
 /****************************************************/
 a, p, h1, h2, h3, h4, h5, h6, nav {
+	color: #0e0e0e;
     font-weight: normal;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-a, p, h4, h5, h6, nav {
-    color: #0e0e0e
-}
-
-h1, h2, h3 {
-    color: #ede4d1;
-}
-
-a, p, nav, h2, h3, h4, h5, h6 {
+a, p, nav {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Viga', sans-serif; /* Headers are different font */
-	font-size: 5em;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 3em;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 a {
@@ -46,20 +50,8 @@ a {
 }
 
 a:hover {
-    color: #ede4d1; /* Links slowly transition to blue on hover */
+    color: #587ca8; /* Links slowly transition to blue on hover */
 }
-
-a.email {
-    text-decoration: none;
-    -webkit-transition-duration: 0.4s; /*For Safari users*/
-    transition-duration: 0.4s;
-    color: #0080FF;
-}
-
-a.email:hover {
-    color: darkgray; /* Just for email, link transitions from blue to dark gray */
-}
-
 
 /*****************************************************/
 /* Div Properties: Sets properties for specific divs */
@@ -102,6 +94,26 @@ div.home-floated {
     padding-right: 2.5em;
 }
 
+div.about-page { /* properties for the aboutme page */
+    border: 0.5em solid #587ca8;
+    padding: 5em;
+    border-top-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+
+div.portfolio-page { /* properties for the portfolio page */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9em;
+    text-align: center;
+    border: 0.5em solid #587ca8;
+    border-top-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    display: inline-block;
+    padding: 3em;
+    width: 50em;
+}
+
 /****************************************************************/
 /* Miscellaneous Properties: Sets properties for other elements */
 /****************************************************************/
@@ -113,6 +125,7 @@ div.home-floated {
     padding-left: 1%;
     padding-top: 1%;
     padding-bottom: 1%;
+    background-color: #ede4d1;
 }
 
 /* Used for adding a bar above the current page on the navbar */
@@ -123,4 +136,9 @@ span.on-page {
 img.homepage {
     border-radius: 50%;
     /*border: 7px solid #0e0e0e;*/
+}
+
+hr { /* Adds space between elements */
+    padding: 3em;
+    border: none;
 }
