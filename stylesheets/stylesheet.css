@@ -2,8 +2,7 @@
 /* Layout Properties: Applies to the entire webpage */
 /****************************************************/
 html {
-	/*background-color: #0080FF;*/
-    background-color: slategray;
+    background-color: #587ca8;
 }
 
 body {
@@ -14,7 +13,7 @@ body {
 /* Text Properties: Sets the properties of the text */
 /****************************************************/
 a, p, h1, h2, h3, h4, h5, h6, nav {
-	color: #333333;
+	color: #0e0e0e;
     font-weight: normal;
     margin-top: 0;
     margin-bottom: 0;
@@ -40,7 +39,7 @@ a {
 }
 
 a:hover {
-    color: slategray; /* Links slowly transition to blue on hover */
+    color: #ede4d1; /* Links slowly transition to blue on hover */
 }
 
 a.email {
@@ -84,7 +83,7 @@ div.homepage { /* properties for the box on the homepage */
     display: inline-block;
     border-top-left-radius: 3em;
     border-bottom-right-radius: 3em;
-    background-color: #ededed;
+    background-color: #ede4d1;
     width: 50em;
     margin: none;
 }
@@ -107,7 +106,6 @@ div.home-floated {
     padding-left: 1%;
     padding-top: 1%;
     padding-bottom: 1%;
-    background-color: #ededed;
 }
 
 /* Used for adding a bar above the current page on the navbar */
@@ -117,5 +115,5 @@ span.on-page {
 
 img.homepage {
     border-radius: 50%;
-    border: 7px solid #333333;
+    border: 7px solid #0e0e0e;
 }
