@@ -80,7 +80,7 @@ div.center-page {
 div.homepage { /* properties for the box on the homepage */
     padding: 3em;
     display: inline-block;
-    border-top-left-radius: 6em;
+    border-top-left-radius: 3em;
     border-bottom-right-radius: 3em;
     background-color: #587ca8; /* #ede4d1; */
     width: 50em;
@@ -134,7 +134,7 @@ span.on-page {
 }
 
 img.homepage {
-    border-radius: 70%;
+    border-radius: 50%;
     /*border: 7px solid #0e0e0e;*/
 }
 
